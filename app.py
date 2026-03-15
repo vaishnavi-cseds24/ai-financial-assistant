@@ -52,6 +52,21 @@ with col1:
 with col2:
     st.subheader("📄 Recent Expenses")
     st.dataframe(df.tail())
+    st.subheader("🗑 Delete an Expense")
+expense_index = st.number_input(
+    "Enter the index of the expense you want to delete",
+    min_value=0,
+    max_value=len(df)-1,
+    step=1
+)
+
+if st.button("Delete Expense"):
+
+    df = df.drop(expense_index)
+    df = df.reset_index(drop=True)
+    df.to_csv("expenses.csv", index=False)
+
+    st.success("Expense deleted successfully!")
     st.subheader("📈 Spending by Category")
 
     category_summary = df.groupby("Category")["Amount"].sum().reset_index()
