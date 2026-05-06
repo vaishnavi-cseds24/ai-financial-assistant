@@ -1,9 +1,6 @@
 Description,Category,Amount
-movie,Entertainment,500.0
-gym,Other,1000.0
- food,Food,700.0
-FUN,Food,500.0
-food,Food,500.0
-toiletries,Bills,1000.0
-toiletries,Bills,1000.0
-toiletries,Bills,1000.0
+gym,Other,1500.0
+movie,Entertainment,900.0
+juice,Food,250.0
+shawarma,Food,155.0
+travel,Transport,400.0
