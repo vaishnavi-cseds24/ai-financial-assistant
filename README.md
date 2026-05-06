@@ -30,3 +30,9 @@ It combines deterministic financial calculations with AI-generated insights for 
    ```bash
    git clone https://github.com/vaishnavi-cseds24/ai-financial-assistant.git
    cd ai-financial-assistant
+2. Install dependencies:
+    pip install -r requirements.txt
+3. Run the application:
+    streamlit run app.py
+4. Make sure Ollama is running with the Phi3 model:
+    ollama run phi3        
